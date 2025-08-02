@@ -17,6 +17,34 @@ export const translations = {
         "There's not much to say about this book, it is just a collection of my observations about the use of AI by the people around me, and I hope you enjoy it.",
       scrollingText: "ABOUT",
     },
+    chapters: {
+      title: "CHAPTERS",
+      viewAll: "VIEW ALL",
+      seeMore: "See More",
+      view: "View",
+      chapters: {
+        chapter_1: {
+          title: "Chapter 1",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        chapter_2: {
+          title: "Chapter 2",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        chapter_3: {
+          title: "Chapter 3",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        chapter_4: {
+          title: "Chapter 4",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+      },
+    },
   },
   "pt-br": {
     nav: {
@@ -35,6 +63,34 @@ export const translations = {
       description:
         "Não há muito o que dizer sobre este livro, é apenas uma coleção das minhas observações sobre o uso de IA pelas pessoas ao meu redor, e espero que você goste.",
       scrollingText: "SOBRE",
+    },
+    chapters: {
+      title: "CAPÍTULOS",
+      viewAll: "VER TODOS",
+      seeMore: "Ver mais",
+      view: "Ver",
+      chapters: {
+        chapter_1: {
+          title: "Capítulo 1",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        chapter_2: {
+          title: "Capítulo 2",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        chapter_3: {
+          title: "Capítulo 3",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        chapter_4: {
+          title: "Capítulo 4",
+          description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+      },
     },
   },
 } as const;

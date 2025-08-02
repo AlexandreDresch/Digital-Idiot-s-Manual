@@ -10,13 +10,13 @@ import { FloatingElements } from "@/components/floating-elements";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import About from "@/components/about";
+import Chapters from "@/components/chapters";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 export default function Home() {
-
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e;
@@ -49,21 +49,21 @@ export default function Home() {
       });
     });
 
-    gsap.utils.toArray<HTMLElement>(".parallax-float").forEach((element, index) => {
-      gsap.to(element, {
-        y: -100 * (index + 1),
-        rotation: 360,
-        ease: "none",
-        scrollTrigger: {
-          trigger: element,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1,
-        },
+    gsap.utils
+      .toArray<HTMLElement>(".parallax-float")
+      .forEach((element, index) => {
+        gsap.to(element, {
+          y: -100 * (index + 1),
+          rotation: 360,
+          ease: "none",
+          scrollTrigger: {
+            trigger: element,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+          },
+        });
       });
-    });
-
-    
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
@@ -84,6 +84,8 @@ export default function Home() {
       <Hero />
 
       <About />
+
+      <Chapters />
 
       <motion.div
         className="fixed bottom-8 right-8"
