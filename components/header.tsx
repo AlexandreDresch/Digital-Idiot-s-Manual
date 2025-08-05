@@ -12,7 +12,7 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800"
+      className="fixed top-0 w-full z-[999] bg-black/80 backdrop-blur-sm border-b border-gray-800"
     >
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <motion.div
@@ -23,7 +23,7 @@ export default function Header() {
         </motion.div>
         <div className="hidden md:flex space-x-8 text-sm">
           {Object.entries(t.nav)
-            .slice(0, 3)
+            .slice(0, 4)
             .map(([key, value]) => (
               <motion.div key={key} whileHover={{ y: -2 }}>
                 <Link

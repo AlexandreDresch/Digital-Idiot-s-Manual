@@ -1,14 +1,9 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "./ui/button";
 import { useLanguage } from "@/app/contexts/language-context";
 import { Card, CardContent } from "./ui/card";
-
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 
 export default function Chapters() {
   const { t } = useLanguage();
@@ -183,7 +178,7 @@ export default function Chapters() {
 
         <div className="text-center mt-12">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button variant="outline">{t.chapters.seeMore}</Button>
+            <Button variant="outline" className="text-slate-950">{t.chapters.seeMore}</Button>
           </motion.div>
         </div>
       </div>

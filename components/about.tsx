@@ -68,7 +68,7 @@ export default function About() {
 
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="w-full ">
             <div className="text-sm text-gray-400 mb-4 overflow-hidden">
               <ScrollingText
                 text={`${t.about.scrollingText} `}
