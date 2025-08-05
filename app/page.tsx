@@ -11,6 +11,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Chapters from "@/components/chapters";
+import ContactDownload from "@/components/contact-download";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -86,6 +87,8 @@ export default function Home() {
       <About />
 
       <Chapters />
+
+      <ContactDownload />
 
       <motion.div
         className="fixed bottom-8 right-8"

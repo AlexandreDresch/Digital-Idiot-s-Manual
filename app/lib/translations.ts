@@ -4,6 +4,7 @@ export const translations = {
       about: "ABOUT",
       chapters: "CHAPTERS",
       contact: "CONTACT",
+      download: "DOWNLOAD",
       letsConnect: "Let's Connect",
     },
     hero: {
@@ -45,12 +46,18 @@ export const translations = {
         },
       },
     },
+    contact_download: {
+      title: "CONTACT & DOWNLOAD",
+      contact: "Contact",
+      download: "Download",
+    }
   },
   "pt-br": {
     nav: {
       about: "SOBRE",
       chapters: "CAPÍTULOS",
       contact: "CONTATO",
+      download: "BAIXAR",
       letsConnect: "Vamos Conversar",
     },
     hero: {
@@ -92,6 +99,11 @@ export const translations = {
         },
       },
     },
+    contact_download: {
+      title: "CONTATO & DOWNLOAD",
+      contact: "Contato",
+      download: "Baixar",
+    }
   },
 } as const;
 
